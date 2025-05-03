@@ -42,9 +42,9 @@ src/            # Source code
 
 ## 🖼️ Screenshots
 
-![Screenshot](assets/images/screenshot_1.png)
-![Screenshot](assets/images/screenshot_2.png)
-![Screenshot](assets/images/screenshot_3.png)
+![Screenshot](assets/images/Screenshot_1.png)
+![Screenshot](assets/images/Screenshot_2.png)
+![Screenshot](assets/images/Screenshot_3.png)
 
 ## 💡 Customization
 
