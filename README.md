@@ -17,17 +17,28 @@ A modern, minimal, and beautiful desktop To-Do application built with C++ and SD
 
 ### Prerequisites
 
-- Windows OS
-- [SDL2](https://www.libsdl.org/) development libraries (already included in this repo)
-- C++ compiler (e.g., MinGW)
+- **Windows:** MinGW, SDL2 (included)
+- **Linux:** g++, [SDL2 development libraries](https://www.libsdl.org/download-2.0.php)
 
 ### Build & Run
+
+#### Windows
 
 ```sh
 mingw32-make clean
 mingw32-make
 cd bin
 TO_DO_APP.exe
+```
+
+#### Linux
+
+```sh
+sudo apt install g++ libsdl2-dev
+make clean
+make
+cd bin
+./TO_DO_APP
 ```
 
 ### Directory Structure
@@ -42,9 +53,9 @@ src/            # Source code
 
 ## 🖼️ Screenshots
 
-![Screenshot](assets/images/screenshot_1.png)
-![Screenshot](assets/images/screenshot_2.png)
-![Screenshot](assets/images/screenshot_3.png)
+![Screenshot 1](assets/images/Screenshot_1.png)
+![Screenshot 2](assets/images/Screenshot_2.png)
+![Screenshot 3](assets/images/Screenshot_3.png)
 
 ## 💡 Customization
 
