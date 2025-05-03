@@ -1,0 +1,20 @@
+# Build artifacts
+/build/
+/bin/
+*.o
+*.obj
+*.exe
+*.dll
+
+# User data
+/dataCenter/tasks.txt
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.log
+
+# Backup files
+*~
+*.swp
+*.swo
