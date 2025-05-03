@@ -42,7 +42,9 @@ src/            # Source code
 
 ## 🖼️ Screenshots
 
-![Screenshot](assets/images/logo.bmp)
+![Screenshot](assets/images/screenshot_1.png)
+![Screenshot](assets/images/screenshot_2.png)
+![Screenshot](assets/images/screenshot_3.png)
 
 ## 💡 Customization
 
