@@ -2,27 +2,30 @@
 
 A modern, minimal, and beautiful desktop To-Do application built with C++ and SDL2.
 
-![App Logo](assets/images/logo.bmp)
-
 ## ✨ Features
 
-- **Clean, Compact UI:** Responsive layout, modern color palette, and smooth interactions.
-- **Task Management:** Add, edit, delete, and mark tasks as completed.
-- **Progress Tracking:** Visual progress bar and stats.
-- **Keyboard Shortcuts:** Fast navigation and task entry.
-- **Persistent Storage:** Your tasks are saved automatically.
-- **Open Source:** MIT Licensed.
+- Clean, compact, and responsive UI
+- Add, edit, delete, and mark tasks as completed
+- Visual progress bar and stats
+- Fast keyboard navigation
+- Tasks are saved automatically (persistent storage)
+- Open Source (MIT License)
 
-## 🚀 Getting Started
+## 🚀 How to Run (No Setup Required)
 
-### Prerequisites
+1. Download or clone this repository.
+2. Open the `bin` folder.
+3. Double-click `TO_DO_APP.exe` to launch the app.
 
-- **Windows:** MinGW, SDL2 (included)
-- **Linux:** g++, [SDL2 development libraries](https://www.libsdl.org/download-2.0.php)
+> All required files (including SDL2.dll) are included in the `bin` folder. The `dataCenter` folder inside `bin` stores your notes and tasks.
 
-### Build & Run
+## 🛠️ Building from Source (For Developers)
 
-#### Windows
+1. Install a C++ compiler (e.g., MinGW or Visual Studio on Windows, g++ on Linux).
+2. Make sure SDL2 development libraries are available in `lib/` and `include/`.
+3. Run `make` (or `mingw32-make` on Windows) in the project root directory.
+
+### Example (Windows)
 
 ```sh
 mingw32-make clean
@@ -31,7 +34,7 @@ cd bin
 TO_DO_APP.exe
 ```
 
-#### Linux
+### Example (Linux)
 
 ```sh
 sudo apt install g++ libsdl2-dev
@@ -41,13 +44,13 @@ cd bin
 ./TO_DO_APP
 ```
 
-### Directory Structure
+## 📁 Directory Structure
 
 ```
 assets/         # Images and fonts
-bin/            # Compiled executable and DLLs
-build/obj/      # Object files
-include/        # Header files
+bin/            # Compiled executable, DLLs, and dataCenter folder
+include/        # Header files (needed only for building from source)
+lib/            # SDL2 libraries (needed only for building from source)
 src/            # Source code
 ```
 

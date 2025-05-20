@@ -1,6 +1,9 @@
 # Build artifacts
 /build/
-/bin/
+# /bin/ is now tracked to allow users to run the app without setup
+# Remove the following line to include bin/ in the repository
+#/bin/
+
 *.o
 *.obj
 *.exe
