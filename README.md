@@ -21,13 +21,22 @@ A modern, minimal, and beautiful desktop To-Do application built with C++ and SD
 
 ## 🛠️ Building from Source (For Developers)
 
+### Prerequisites
+
 1. Install a C++ compiler (e.g., MinGW or Visual Studio on Windows, g++ on Linux).
-2. Make sure SDL2 development libraries are available in `lib/` and `include/`.
+2. **Download SDL2 Development Libraries:**
+   - Go to [SDL2 Downloads](https://www.libsdl.org/download-2.0.php)
+   - Download the development libraries for your platform
+   - Extract and copy the header files to the `include/` folder (alongside the existing custom headers)
+   - Copy the library files (.lib, .a, .dll) to the `lib/` folder
 3. Run `make` (or `mingw32-make` on Windows) in the project root directory.
 
 ### Example (Windows)
 
 ```sh
+# Make sure SDL2 development libraries are in include/ and lib/ folders
+# Download from https://www.libsdl.org/download-2.0.php
+
 mingw32-make clean
 mingw32-make
 cd bin
@@ -37,7 +46,10 @@ TO_DO_APP.exe
 ### Example (Linux)
 
 ```sh
-sudo apt install g++ libsdl2-dev
+# Install SDL2 development libraries
+sudo apt install g++ libsdl2-dev libsdl2-ttf-dev
+
+# Build the project
 make clean
 make
 cd bin
@@ -49,8 +61,8 @@ cd bin
 ```
 assets/         # Images and fonts
 bin/            # Compiled executable, DLLs, and dataCenter folder
-include/        # Header files (needed only for building from source)
-lib/            # SDL2 libraries (needed only for building from source)
+include/        # Custom header files (SDL2 headers need to be downloaded separately)
+lib/            # SDL2 libraries (need to be downloaded separately for building)
 src/            # Source code
 ```
 
